@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.headerA {
+    background: url('img.1.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    color: white;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: serif;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.header-content .a {
+    background-color: #c5b798;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.header-content .b {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+.nav-item {
+    background-color: #c5b798;
+    padding: 30px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+section.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 60px;
+    background-color: #ffffff;
+}
+
+.about-content {
+    max-width: 500px;
+}
+
+.about-content h2 {
+    font-family: serif;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-content button {
+    background-color: #c5b798;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.about-image img {
+    border-radius: 90%;
+    width: 200px;
+    height: 200px;
+}
+
+.cards {
+    text-align: center;
+    padding: 60px 0;
+    background-color: #ded1b7;
+}
+
+.cards h1 {
+    color: white;
+    margin-bottom: 10px;
+    font-family: serif;
+    font-size: 50px;
+}
+
+.cards p{
+    color: #fdfdfd;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 0 70px;
+}
+
+@media (max-width: 1200px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+}
+
+.card {
+    background-color: rgb(4, 4, 4);
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1px;
+}
+
+.card p {
+    margin-top: 5%;
+    font-size: 15px;
+    color:#fff9f9;
+}
+
+.headerB{
+    background: url('img.9.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+    font-family: serif;
+    color: white;
+    height: 400px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin: 5%;
+    padding: 0 2rem;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 15px;
+    text-align: center;
+    width: 225px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 350px;
+}
+
+.service-item img {
+    width: 100%;
+    height: 40%;
+    margin-bottom: 3%;
+}
+
+.service-item h2 {
+    color: #000;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.service-item p {
+    color: rgb(0, 0, 0);
+    margin-bottom: 1.5rem;
+}
+
+.campsite-info {
+    display: flex;
+    margin-top: 19%;
+    margin-bottom: 4%;
+}
+
+.first {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.second {
+    display: flex;
+    width: 50%;
+}
+
+.campsite-info h3 {
+    margin-bottom: 30px;
+    font-family: serif;
+    font-size: 25px;
+}
+
+.campsite-info li {
+    margin-bottom: 10px;
+}
+
+.camping-plan {
+    background: url('img.14.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.camping-plan h2 {
+    font-size: 50px;
+    margin: 7%;
+    margin-bottom: 3%;
+}
+
+.camping-plan ul {
+    margin-bottom: 2rem;
+}
+
+.camping-plan ul li {
+    margin-bottom: 3%;
+    font-size: large;
+    margin-left: 7%;
+}
+
+.camping-plan a {
+    margin-left: 7%;
+    margin-top: 10%;
+    padding: 10px 30px;
+    background-color: #c5b798;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.heading {
+    text-align: center;
+    margin: 3%;
+    margin-bottom: 4%;
+    font-family: serif;
+    font-size: 50px;
+}
+
+.plan-trip {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.plan-trip h4 {
+    font-family: serif;
+    font-size: 20px;
+}
+
+.plan-trip div {
+    width: 50%;
+    text-align: center;
+}
+
+.plan-trip div img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.end {
+    background: url(img.19.jpg) no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+}
+
+.contact {
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 6%;
+}
+
+.contact h2 {
+    margin-bottom: 3%;
+    font-family: serif;
+    font-size: 40px;
+}
+
+.contact p {
+    line-height: 1.7;
+    margin-bottom: 8%;
+}
+
+.contact .c{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login {
+    width: 50%;
+    margin-top:8%;
+}
+
+input, textarea {
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.submit {
+    margin-right: 10%;
+    padding: 10px 175px;
+    background-color: #c5b798;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 1.5%;
+}
