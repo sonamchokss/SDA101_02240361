@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Basic Form Validation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form id="registrationForm">
+  <label for="username">Username:</label><br>
+  <input type="text" id="username" name="username" required><br>
+  <span id="usernameError" class="error"></span><br>
+
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br>
+  <span id="emailError" class="error"></span><br>
+
+  <label for="password">Password:</label><br>
+  <input type="password" id="password" name="password" required><br>
+  <span id="passwordError" class="error"></span><br>
+
+  <label for="confirmPassword">Confirm Password:</label><br>
+  <input type="password" id="confirmPassword" name="confirmPassword" required><br>
+  <span id="confirmPasswordError" class="error"></span><br>
+
+  <button type="submit" id="submitBtn">Submit</button>
+</form>
+
+<script>
+  const form = document.getElementById('registrationForm');
+  const usernameInput = document.getElementById('username');
+  const emailInput = document.getElementById('email');
+  const passwordInput = document.getElementById('password');
+  const confirmPasswordInput = document.getElementById('confirmPassword');
+  const submitButton = document.getElementById('submitButton');
+
+  // Error messages
+  const usernameError = document.getElementById('usernameError');
+  const emailError = document.getElementById('emailError');
+  const passwordError = document.getElementById('passwordError');
+  const confirmPasswordError = document.getElementById('confirmPasswordError');
+
