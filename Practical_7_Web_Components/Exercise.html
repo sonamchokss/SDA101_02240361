@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reusable Card Component</title>
+    <script type="module" src="card_component.js"></script>
+    <style>
+        :root {
+            --card-bg-color: #d0e2e8;
+            --card-border-color: #747373;
+            --card-border-radius: 10px;
+            --card-padding: 20px;
+            --card-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+
+<custom-card card-title="Example Card">
+    <img slot="header" src="image.jpg" alt="Header Image" />
+    <p slot="content">Refresh your mind and soul with us.</p>
+    <button style="padding: 20px 45px;
+     border-radius: 40px; 
+     font-size: 30px;
+     cursor: pointer;"slot="footer">Visit Us</button>
+</custom-card>
+
+</body>
+</html>
